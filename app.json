@@ -1,0 +1,62 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/category",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/cart/cart",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/auth/auth",
+    "pages/pay/pay"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#f4f4f4",
+    "navigationBarBackgroundColor": "#50d1df",
+    "navigationBarTitleText": "practice",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "home",
+      "iconPath": "icons/home.png",
+      "selectedIconPath": "icons/_home.png"
+    },
+    {
+      "pagePath": "pages/category/category",
+      "text": "store",
+      "iconPath": "icons/store.png",
+      "selectedIconPath": "icons/_store.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "cart",
+      "iconPath": "icons/cart.png",
+      "selectedIconPath": "icons/_cart.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "center",
+      "iconPath": "icons/mine.png",
+      "selectedIconPath": "icons/_mine.png"
+    }
+    ],
+    "color": "#000000",
+    "selectedColor": "#50d1df",
+    "backgroundColor": "#f4f4f4",
+    "borderStyle": "white"
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
