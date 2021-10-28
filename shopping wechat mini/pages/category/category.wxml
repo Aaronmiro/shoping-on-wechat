@@ -1,0 +1,22 @@
+
+<searchInput></searchInput>
+
+<view class="category">
+  <scroll-view scroll-y class="categoryLeft" >
+    <view class="leftMenu" wx:for="{{categoryListLeft}}" wx:key="*this">
+      <view class="leftMenuItem {{index===currentIndex?'active':''}}" >{{item}}</view>
+    </view>
+  </scroll-view >
+
+  <scroll-view scroll-y class="categoryRight">
+    <view class="rightMenu" wx:for="{{categoryListRight}}" wx:key="*this" wx:for-item="item1">
+      <view class="rightMenuTitle">{{item1.cat_name}}</view>
+      <view class="rightMenuItem" >
+        <navigator url="" wx:for="{{item1.children}}" wx:for-item="item2" wx:key="cat_id">
+          <image mode="widthFix" src="{{item2.cat_icon}}"></image>
+          <view>{{item2.cat_name}}</view>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view >
+</view>
